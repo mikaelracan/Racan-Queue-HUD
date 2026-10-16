@@ -1,0 +1,13 @@
+## Interface: 120105
+## Title: Racan Queue HUD
+## Notes: Queue/Raid role HUD with modern icons; toggle original Blizzard icons; no background.
+## Author: Racan / OpenAI
+## Version: 0.4.1
+## SavedVariables: RacanQueueHUDDB
+## IconTexture: Interface\Icons\INV_Misc_PocketWatch_01
+## X-Release-Status: Prototype - in-game validation required
+
+Queue.lua
+Raid.lua
+Display.lua
+Main.lua

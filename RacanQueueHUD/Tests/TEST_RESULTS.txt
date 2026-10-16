@@ -1,0 +1,92 @@
+PASS No active queue
+PASS Positional return holes preserved
+PASS Screenshot LFD role counts / myWait / elapsed timestamp
+PASS Two LFR wings use distinct requested statistics
+PASS Multiple selected dungeons remain a single queue
+PASS Unknown wait is not replaced by global average
+PASS Zero / nil / future queue time does not become huge elapsed
+PASS Unavailable wing stats do not borrow another wing
+PASS Secret numeric fields render placeholders without arithmetic
+PASS Secret mode/list safe fallback
+PASS Invalid role values are not invented or clamped
+PASS All-zero role placeholders remain unknown
+PASS Proposal visible even when absent from queued list
+PASS Role check category and ID included
+PASS Suspended queue does not show stale searching numbers
+PASS Entered dungeon hides only that wing; other queue remains
+PASS Category-only transition
+PASS Missing API / raised error captured for diagnostics
+PASS Duration formatting
+PASS Incomplete tank count keeps X and slash default, colors Y blue
+PASS Complete tank count colors X and Y blue
+PASS Incomplete healer green and complete healer green
+PASS Incomplete DPS yellow and complete DPS yellow
+PASS Unavailable or zero-capacity role not falsely shown as full
+|cffffcc33Racan Queue HUD:|r v0.4.1 loaded. Use /rqh unlock to move the HUD; /rqh lock to finish.
+PASS SavedVariables initialize only on this addon event
+|cffffcc33Racan Queue HUD:|r HUD unlocked. Drag to move it, then type /rqh lock.
+|cffffcc33Racan Queue HUD:|r HUD locked. Mouse clicks pass through.
+PASS Unlock / lock works without a queue
+|cffffcc33Racan Queue HUD:|r HUD unlocked. Drag to move it, then type /rqh lock.
+|cffffcc33Racan Queue HUD:|r HUD locked. Mouse clicks pass through.
+PASS Unlock shows only draggable outline, lock hides outline
+PASS No Blizzard Edit Mode callback registration or controls
+|cffffcc33Racan Queue HUD:|r The HUD is always background-free.
+|cffffcc33Racan Queue HUD:|r Scale must be a number between 0.6 and 2.
+|cffffcc33Racan Queue HUD:|r Scale must be a number between 0.6 and 2.
+PASS Scale decimal and comma; deprecated bg never creates a background
+PASS Modern role icons with counts; missing row absent
+PASS Role icon brightness follows whether a role is filled
+PASS Modern icon colors are exact role RGB and texture coordinates full
+|cffffcc33Racan Queue HUD:|r Role icons: blizzard.
+|cffffcc33Racan Queue HUD:|r Role icons: modern.
+PASS User can switch old Blizzard role icons without changing layout
+|cffffcc33Racan Queue HUD:|r Use /rqh icons modern or /rqh icons blizzard.
+PASS Invalid icon style does not corrupt saved preference
+PASS Unknown role count uses placeholder and muted icon
+PASS Proposal state hides role icons instead of stale counts
+|cffffcc33Racan Queue HUD:|r Role icons: blizzard.
+|cffffcc33Racan Queue HUD:|r Role icons: modern.
+PASS Fallback atlases work if Blizzard role helper is unavailable
+PASS Two active LFR wings render two icon rows and different times
+PASS Preview explicitly labelled; real queue overrides it
+PASS Off/on does not change actual queue state
+|cffff5555========== OUTPUT START ==========|r
+ADDON=RacanQueueHUD VERSION=0.4.1
+ICON_STYLE=modern
+CLIENT=12.1.5 BUILD=70391 INTERFACE=120105
+IN_GAME_VALIDATION=USER_TEST_REQUIRED
+ACTIVE_QUEUE_BLOCKS=1
+RAID_MODE=NONE
+CATEGORY=3 ID=201 MODE=queued
+LFR
+Tank: 1/2   |   Heal: 3/5   |   DPS: 15/18
+Average Wait Time: 05:00
+Time in Queue: 00:50
+|cffff5555========== OUTPUT END ==========|r
+|cffffcc33Racan Queue HUD:|r Default position and appearance restored.
+PASS Diagnostics runs; reset restores defaults
+PASS LFR requirements are remembered per wing, including after joining
+PASS Integration renders exact LFR triple with source quota and no times
+PASS LFR death and resurrection update only the living counter
+PASS LFR tank departure lowers present and living, not required
+PASS Premade raid suppresses required field entirely
+PASS Unknown premade roles shown separately, not counted as DPS
+PASS Role fallback and sparse raid slots work
+PASS Offline roster members remain present, not counted alive
+PASS Raid with unobserved LFR quota shows unknown, never invents 2/3/20
+PASS Two cached wings with missing ID must not leak another wing's quota
+PASS Exactly one cached wing can be used only when raid wing ID is absent
+PASS Expired cache is rejected and purged
+PASS Unknown living statuses show ? and do not pretend a death count
+PASS Secret unit-death response cannot silently turn nil roster flag into alive
+PASS Preview variants show raid LFR / manual without real group
+PASS Raid takes precedence over a simultaneous queue; switches back
+|cffffcc33Racan Queue HUD:|r HUD unlocked. Drag to move it, then type /rqh lock.
+|cffffcc33Racan Queue HUD:|r HUD locked. Mouse clicks pass through.
+PASS One addon, original positioning, no Edit Mode, and intact queue fractions
+
+OFFLINE_TESTS_PASSED=58
+LUA_RUNTIME=Lua 5.3
+WOW_CLIENT_TESTS=NOT_RUN
+REAL_SECRET_VALUES_TESTS=NOT_RUN
